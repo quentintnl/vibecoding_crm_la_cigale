@@ -7,8 +7,8 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { getReservations, createReservation } from 'crm-la-cigale/lib/airtable';
-import { createReservationSchema } from 'crm-la-cigale/lib/validation';
+import { getReservations, createReservation } from '@/lib/airtable';
+import { createReservationSchema } from '@/lib/validation';
 import { ZodError } from 'zod';
 
 /**

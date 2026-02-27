@@ -6,9 +6,9 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
-import { Reservation } from 'crm-cigale/types/reservation';
-import { createReservation, updateReservation } from 'crm-la-cigale/hooks/useReservations';
-import { Button } from 'crm-la-cigale/components/ui/Button';
+import { Reservation } from '@/types/reservation';
+import { createReservation, updateReservation } from '@/hooks/useReservations';
+import { Button } from '@/components/ui/Button';
 import { XMarkIcon, ClockIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 
 interface ReservationFormModalProps {

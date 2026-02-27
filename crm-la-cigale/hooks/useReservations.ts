@@ -4,7 +4,7 @@
  */
 
 import useSWR from 'swr';
-import { Reservation, CreateReservationData, UpdateReservationData } from 'crm-cigale/types/reservation';
+import { Reservation, CreateReservationData, UpdateReservationData } from '@/types/reservation';
 
 // Fetcher générique pour SWR
 const fetcher = (url: string) => fetch(url).then((res) => res.json());

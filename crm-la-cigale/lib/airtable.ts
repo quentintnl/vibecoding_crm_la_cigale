@@ -14,7 +14,7 @@ import {
   CreateReservationData,
   UpdateReservationData,
   ReservationFilters,
-} from 'crm-cigale/types/reservation';
+} from '@/types/reservation';
 
 // Configuration Airtable depuis les variables d'environnement
 const AIRTABLE_PAT = process.env.AIRTABLE_PAT;

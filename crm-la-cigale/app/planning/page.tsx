@@ -6,10 +6,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useReservations } from 'crm-la-cigale/hooks/useReservations';
-import { Navigation } from 'crm-la-cigale/components/Navigation';
+import { useReservations } from '@/hooks/useReservations';
+import { Navigation } from '@/components/Navigation';
 import { PlusIcon, ChevronLeftIcon, ChevronRightIcon, UserIcon, PhoneIcon } from '@heroicons/react/24/outline';
-import { Reservation } from 'crm-cigale/types/reservation';
+import { Reservation } from '@/types/reservation';
 import {
   format,
   startOfWeek,
@@ -20,7 +20,7 @@ import {
   subWeeks,
 } from 'date-fns';
 import { fr } from 'date-fns/locale';
-import ReservationFormModal from 'crm-la-cigale/components/ReservationFormModal';
+import ReservationFormModal from '@/components/ReservationFormModal';
 
 // Heures de service (11h à 23h)
 const HOURS = Array.from({ length: 13 }, (_, i) => i + 11); // 11 à 23

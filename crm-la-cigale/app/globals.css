@@ -1,4 +1,4 @@
-@import "../../crm-cigale/node_modules/tailwindcss/dist/lib.d.mts";
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;

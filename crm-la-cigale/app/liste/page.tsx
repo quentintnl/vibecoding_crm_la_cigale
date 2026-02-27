@@ -6,15 +6,15 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
-import { useReservations, deleteReservation, updateReservationStatus } from 'crm-la-cigale/hooks/useReservations';
-import { Navigation } from 'crm-la-cigale/components/Navigation';
-import { Button } from 'crm-la-cigale/components/ui/Button';
-import { SkeletonTable } from 'crm-la-cigale/components/ui/Skeleton';
+import { useReservations, deleteReservation, updateReservationStatus } from '@/hooks/useReservations';
+import { Navigation } from '@/components/Navigation';
+import { Button } from '@/components/ui/Button';
+import { SkeletonTable } from '@/components/ui/Skeleton';
 import { PlusIcon, PencilIcon, TrashIcon, CheckCircleIcon, UserIcon, MagnifyingGlassIcon, CalendarDaysIcon } from '@heroicons/react/24/outline';
-import { Reservation } from 'crm-cigale/types/reservation';
+import { Reservation } from '@/types/reservation';
 import { format } from 'date-fns';
 import { fr } from 'date-fns/locale';
-import ReservationFormModal from 'crm-la-cigale/components/ReservationFormModal';
+import ReservationFormModal from '@/components/ReservationFormModal';
 
 export default function ListePage() {
   const { reservations, isLoading, isError, mutate } = useReservations();

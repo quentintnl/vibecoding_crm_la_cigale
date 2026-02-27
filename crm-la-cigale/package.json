@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "../crm-cigale/node_modules/.bin/next dev",
-    "build": "../crm-cigale/node_modules/.bin/next build",
-    "start": "../crm-cigale/node_modules/.bin/next start",
-    "lint": "../crm-cigale/node_modules/.bin/eslint"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
